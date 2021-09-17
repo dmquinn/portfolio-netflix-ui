@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import SliderCard from "./SliderCard";
 import One from "../olsen.svg";
 import Two from "../milk.svg";
 import Three from "../Capture3.PNG";
@@ -6,8 +7,6 @@ import Three from "../Capture3.PNG";
 import "../Slider.css";
 
 const Slider = () => {
-  const [hover, setHover] = useState(false);
-
   return (
     <div>
       <h3 className="px-12 text-white">Popular Projects</h3>
@@ -16,7 +15,8 @@ const Slider = () => {
           <a href="#section3" class="arrow__btn left-arrow">
             ‹
           </a>
-          <div
+          {SliderCard.map(() => {})}
+          {/* <div
             class="item"
             onMouseOver={() => setHover(true)}
             onMouseOut={() => setHover(false)}
@@ -138,7 +138,7 @@ const Slider = () => {
               src="https://occ-0-243-299.1.nflxso.net/dnm/api/v5/rendition/a76057bcfd003711a76fb3985b1f2cf74beee3b8/AAAABVxuRB932hvre-XP0gh6ar5ztoR3Oe3QjKHkyvcDnRak2MKXOrx5H7mFQSvggefMFOppwEs7ZCCpiqrJ_CYGvtvYB9NpU4SWUtNO6uV2u-DTID267AcHjHcGvGBQJ1ufddDkxcGOZyi5MlOQ5QUmBun4652FbYUnib3zMYQDgcna_Pvz8y_HO5fbokxezrRR1JZAAiqFSQ.jpg"
               alt="Describe Image"
             />
-          </div>
+          </div> */}
 
           <a href="#section1" class="arrow__btn right-arrow">
             ›

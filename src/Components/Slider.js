@@ -1,12 +1,14 @@
 import React, { useState } from "react";
-import SliderCard from "./SliderCard";
+// import SliderCard from "./SliderCard";
+import SliderData from "../SliderData";
 import One from "../olsen.svg";
 import Two from "../milk.svg";
 import Three from "../Capture3.PNG";
-
 import "../Slider.css";
 
 const Slider = () => {
+  const [hover, setHover] = useState(false);
+
   return (
     <div>
       <h3 className="px-12 text-white">Popular Projects</h3>
@@ -15,13 +17,41 @@ const Slider = () => {
           <a href="#section3" class="arrow__btn left-arrow">
             ‹
           </a>
-          {SliderCard.map(() => {})}
-          {/* <div
+          {SliderData.filter((item, index) => index < 3).map((card, i) => {
+            return (
+              <>
+                <img src={card.image} alt="Describe" className="rounded-md" />
+                <div style={{ visibility: hover ? "visible" : "hidden" }}>
+                  <h1 class="heading">Heading One</h1>
+                  <p class="duration">Duration: 10 min</p>
+                </div>
+              </>
+            );
+          })}
+          <a href="#section2" class="arrow__btn left-arrow">
+            ‹
+          </a>
+        </section>
+        <section id="section2">
+          {SliderData.filter((item, index) => index < 3).map((card, i) => {
+            return (
+              <>
+                <img src={card.image} alt="Describe" className="rounded-md" />
+                <div style={{ visibility: hover ? "visible" : "hidden" }}>
+                  <h1 class="heading">Heading One</h1>
+                  <p class="duration">Duration: 10 min</p>
+                </div>
+              </>
+            );
+          })}
+        </section>
+
+        {/* <div
             class="item"
             onMouseOver={() => setHover(true)}
             onMouseOut={() => setHover(false)}
-          >
-            <a href="#">
+          > */}
+        {/* <a href="#">
               <img src={One} alt="Describe" className="rounded-md" />
               <div style={{ visibility: hover ? "visible" : "hidden" }}>
                 <h1 class="heading">Heading One</h1>
@@ -46,7 +76,6 @@ const Slider = () => {
                 alt="Describe "
                 className=""
               />
-
               <h1 class="heading">Heading One</h1>
               <p class="duration">Duration: 10 min</p>
             </a>
@@ -65,7 +94,6 @@ const Slider = () => {
             ›
           </a>
         </section>
-
         <section id="section2">
           <a href="#section1" class="arrow__btn left-arrow">
             ‹
@@ -104,7 +132,6 @@ const Slider = () => {
             ›
           </a>
         </section>
-
         <section id="section3">
           <a href="#section2" class="arrow__btn left-arrow">
             ‹
@@ -138,12 +165,11 @@ const Slider = () => {
               src="https://occ-0-243-299.1.nflxso.net/dnm/api/v5/rendition/a76057bcfd003711a76fb3985b1f2cf74beee3b8/AAAABVxuRB932hvre-XP0gh6ar5ztoR3Oe3QjKHkyvcDnRak2MKXOrx5H7mFQSvggefMFOppwEs7ZCCpiqrJ_CYGvtvYB9NpU4SWUtNO6uV2u-DTID267AcHjHcGvGBQJ1ufddDkxcGOZyi5MlOQ5QUmBun4652FbYUnib3zMYQDgcna_Pvz8y_HO5fbokxezrRR1JZAAiqFSQ.jpg"
               alt="Describe Image"
             />
-          </div> */}
+          </div>
 
           <a href="#section1" class="arrow__btn right-arrow">
             ›
-          </a>
-        </section>
+          </a> */}
       </div>
     </div>
   );

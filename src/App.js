@@ -5,11 +5,12 @@ import Stack from "./Components/Stack";
 
 function App() {
   return (
-    <div className="App h-sreen bg-black">
+    <div className="App">
       <Header />
       <TopImage />
       <Slider />
       <Stack />
+      <div className="morePage"></div>
     </div>
   );
 }

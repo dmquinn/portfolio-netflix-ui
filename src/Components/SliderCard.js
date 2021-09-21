@@ -1,22 +1,31 @@
 import React, { useState } from "react";
-import cards from "../SliderData";
 
-const SliderCard = () => {
+const SliderCard = ({ card }) => {
   const [hover, setHover] = useState(false);
-
   return (
     <div
-      class="item"
-      onMouseOver={() => setHover(true)}
-      onMouseOut={() => setHover(false)}
+      className="item px-1 h-3"
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+      style={{
+        position: "relative",
+        // zIndex: hover ? "99" : "0",
+      }}
     >
-      <a href="#">
-        <img src={cards.image} alt="Describe" className="rounded-md" />
-        <div style={{ visibility: hover ? "visible" : "hidden" }}>
-          <h1 class="heading">{cards.header}</h1>
-          <p class="duration">{cards.subHeader}</p>
-        </div>
-      </a>
+      <img
+        src={card.image}
+        alt="Describe"
+        className="rounded-md object-cover"
+      />
+      <div
+        style={{
+          visibility: hover ? "visible" : "hidden",
+        }}
+        className="bg-black p-2 -mt-1 text-white"
+      >
+        <h3 className="heading">{card.header}</h3>
+        <p className="duration">{card.subHeader}</p>
+      </div>
     </div>
   );
 };

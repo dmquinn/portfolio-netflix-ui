@@ -14,7 +14,7 @@ const TopImage = () => {
         <button className="bg-white font-bold rounded-3 py-3 px-8 shadow-lg uppercase tracking-wider">
           About
         </button>
-        <button className="bg-gray-400 bg-opacity-70 text-white font-bold rounded-3 ml-3 py-3 px-8 shadow-lg uppercase tracking-wider">
+        <button className="bg-gray-400 bg-opacity-1 text-white font-bold rounded-3 ml-3 py-3 px-8 shadow-lg uppercase tracking-wider">
           Info
         </button>
       </div>

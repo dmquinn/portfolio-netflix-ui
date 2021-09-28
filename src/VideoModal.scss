@@ -1,0 +1,10 @@
+.videoToolbar {
+  opacity: 0;
+  transition: 0.2s;
+  transition-delay: 2s;
+
+  &:hover {
+    opacity: 1;
+    transition: 0.2s;
+  }
+}

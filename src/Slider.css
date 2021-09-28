@@ -1,34 +1,20 @@
-* {
-  -webkit-transform-origin: center center;
-          transform-origin: center center;
-}
-
 .react-multi-carousel-list {
   overflow: visible !important;
-  -webkit-transform-origin: center center;
-          transform-origin: center center;
 }
 
 .react-multi-carousel-item {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   position: relative;
-  -webkit-transform-origin: center center;
-          transform-origin: center center;
+  -webkit-transform-origin: 50% 1600%;
+          transform-origin: 50% 1600%;
 }
 
 .react-multi-carousel-item:hover {
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
-  -webkit-transform-origin: center center;
-          transform-origin: center center;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
   z-index: 99;
-}
-
-.item {
-  -webkit-transform-origin: center center;
-          transform-origin: center center;
 }
 /*# sourceMappingURL=Slider.css.map */

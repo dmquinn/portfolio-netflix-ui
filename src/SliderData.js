@@ -1,54 +1,73 @@
-import One from "./olsen.svg";
-import Two from "./milk.svg";
-import Three from "./Capture3.PNG";
+import Milk from "./images/milk.svg";
+import Olsen from "./images/olsen.svg";
+import Busckr from "./images/busckr.svg";
+import PhotoEditor from "./images/photoEditor.svg";
+import Anomic from "./images/anomic.svg";
+import Weather from "./images/weather.svg";
+import Geogoi from "./images/geogoi.svg";
+import Player from "./images/player.svg";
 
 const cards = [
   {
-    image:
-      "https://images.unsplash.com/photo-1592503254549-d83d24a4dfab?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80",
-    header: "header one",
-    subHeader: "subheader one",
-    section: "",
+    image: Milk,
+    video:
+      "https://res.cloudinary.com/drpdq0pui/video/upload/v1632491543/portfolio/screen-capture_1_ojqgs7.mp4",
+    header: "Milk Records",
+    subHeader: "E-commerce Website",
+    tags: "MERN . Paypal . Full Stack",
+    stack: ["fab fa-react", "icon-mongodb"],
+    info: "This is an online record store built using full MERN stack. It features separate user and admin functionalities (admins can perform CRUD functions as well as award other user admin status), and features multiple integrated secure payment methods. Users can search products, add items to cart while continuing to shop, and filter records by genre. All design and artwork was made by me for this project. ",
+    genres: "Full Website, E-Commerce",
+    stackText:
+      "React, Redux, Node, Express, MongoDB, React-Bootstrap, Paypal Sandbox",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1588775587739-7b7e1b11f4e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    image: Olsen,
     header: "header two",
     subHeader: "subheader two",
-    section: "",
+    tags: " . Ejs . Dynamic Iframe",
+    stack: ["fab fa-react", "icon-mongodb"],
+    info: "This is a React application which uses the Spotify API to fetch songs and artists on users’ search. It then uses the Youtube API to search for top videos and play using an embedded iframe. The app features an incremental search function, and users can add videos to a playlist or choose from two preset playlists.",
+    genres: "Web App",
+    stackText:
+      "React, Redux, Node, Express, MongoDB, Bootstrap-5, Youtube API, Spotify API",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1504509546545-e000b4a62425?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80",
+    image: Busckr,
     header: "header three",
     subHeader: "subheader three",
-    section: "",
+    tags: "Spotify Api . Youtube Api . MongoDB",
+    stack: "fab fa-react",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1505739998589-00fc191ce01d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80",
+    image: PhotoEditor,
     header: "header three",
     subHeader: "subheader three",
-    section: "",
+    tags: "MERN . Paypal . Full Stack",
   },
   {
-    image: "https://f4.bcbits.com/img/0021114911_10.jpg",
+    image: Weather,
     header: "header three",
     subHeader: "subheader three",
-    section: "",
+    tags: "MERN . Paypal . Full Stack",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1535979014625-490762ceb2ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80",
+    image: Geogoi,
     header: "header three",
     subHeader: "subheader three",
-    section: "2",
+    tags: "MERN . Paypal . Full Stack",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=725&q=80",
+    image: Anomic,
     header: "header three",
     subHeader: "subheader three",
+    tags: "MERN . Paypal . Full Stack",
+  },
+  {
+    image: Player,
+    header: "header three",
+    subHeader: "subheader three",
+    tags: "MERN . Paypal . Full Stack",
   },
 ];
 export default cards;

@@ -1,9 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
-import ProfilePic from "../profilePic.png";
+import ProfilePic from "../images/profilePic.png";
 
 const Header = () => {
-  let listener = null;
-  const [scrollState, setScrollState] = useState("top");
   const [navBackground, setNavBackground] = useState(false);
   const navRef = useRef();
   navRef.current = navBackground;
@@ -24,7 +22,7 @@ const Header = () => {
       className="relative flex flex-wrap items-center justify-between py-1 bg-gradient-to-b from-black mb-3 sticky top-0 z-50"
       style={{
         transition: "1s ease",
-        backgroundColor: navBackground ? "black" : "transparent",
+        backgroundColor: navBackground ? "rgb(20,20,20)" : "transparent",
       }}
     >
       <div className="container mx-auto flex flex-wrap items-center justify-between">
@@ -63,7 +61,7 @@ const Header = () => {
               </a>
             </li>
             <li className="nav-item w-14">
-              <img src={ProfilePic}></img>
+              <img src={ProfilePic} alt=""></img>
             </li>
           </ul>
         </div>

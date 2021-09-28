@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import SliderCard from "./SliderCard";
 import SliderData from "../SliderData";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "../Slider.css";
 
-const Slider = () => {
+const Slider = ({ setIsOpen, setModalData, modalData }) => {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -25,8 +25,8 @@ const Slider = () => {
   };
 
   return (
-    <div style={{ overflow: "visible" }} className="px-5">
-      <h3 className="px-12 text-white">Popular Projects</h3>
+    <div style={{ overflow: "visible" }} className="px-5 ml-3">
+      <h3 className="text-white">Popular Projects</h3>
       <Carousel
         ssr
         partialVisbile
@@ -36,7 +36,13 @@ const Slider = () => {
         {SliderData.map((card, i) => {
           return (
             <div className="cardContainer">
-              <SliderCard card={card} key={i} />
+              <SliderCard
+                card={card}
+                key={i}
+                setIsOpen={setIsOpen}
+                setModalData={setModalData}
+                modalData={modalData}
+              />
             </div>
           );
         })}

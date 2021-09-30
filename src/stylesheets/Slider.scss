@@ -1,0 +1,31 @@
+.react-multi-carousel-list {
+  overflow: visible !important;
+}
+.react-multi-carousel-item {
+  transition: 0.3s;
+  position: relative;
+  transform-origin: 50% 80%;
+}
+.react-multi-carousel-item:hover {
+  transition: 0.3s;
+  transform: scale(1.4);
+  z-index: 99;
+}
+.react-multiple-carousel__arrow {
+  position: absolute;
+  top: 0;
+  border-radius: 0px !important;
+  right: -4%;
+  width: 60px;
+  height: 57%;
+}
+.react-multiple-carousel__arrow--left {
+  left: -60px;
+}
+.link {
+  cursor: pointer;
+  opacity: 0.5;
+  &:hover {
+    opacity: 1;
+  }
+}

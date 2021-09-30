@@ -22,11 +22,11 @@ const Header = () => {
       className="relative flex flex-wrap items-center justify-between py-1 bg-gradient-to-b from-black mb-3 sticky top-0 z-50"
       style={{
         transition: "1s ease",
-        backgroundColor: navBackground ? "rgb(20,20,20)" : "transparent",
+        backgroundColor: navBackground ? "#141414" : "transparent",
       }}
     >
       <div className="container mx-auto flex flex-wrap items-center justify-between">
-        <div className="w-full relative flex justify-between lg:w-auto  px-4 lg:static lg:block lg:justify-start">
+        <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
           <a href="https://fontmeme.com/netflix-font/">
             <img
               src="https://fontmeme.com/permalink/210916/161f87475cfd13e0b716890b557a6a9a.png"

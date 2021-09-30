@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
+import "../stylesheets/Slider.css";
 
 const SliderCard = ({ card, setIsOpen, setModalData, modalData }) => {
   const [hover, setHover] = useState(false);
   const handleClick = () => {
+    window.scrollTo(0, 0);
     setIsOpen(true);
     setModalData({ card });
     console.log(modalData);
@@ -10,7 +12,7 @@ const SliderCard = ({ card, setIsOpen, setModalData, modalData }) => {
   return (
     <>
       <div
-        className="item px-1 h-3"
+        className="item px-1"
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
         onClick={handleClick}
@@ -18,21 +20,29 @@ const SliderCard = ({ card, setIsOpen, setModalData, modalData }) => {
         <img
           src={card.image}
           alt="Describe"
-          className="rounded-md object-cover"
+          className="rounded-t-sm object-cover"
         />
         <div
           style={{
             visibility: hover ? "visible" : "hidden",
+            opacity: hover ? "1" : "0",
+            transition: "0.4s",
           }}
-          className="bg-modal-gray rounded-md -mt-1 text-white py-3 shadow-lg"
+          className="bg-modal-gray rounded-b-sm text-white pt-3  shadow-lg"
         >
           <div className="flex">
             <i className="fas fa-play ml-4 icon white"></i>
             <i className="fas fa-plus ml-2 icon"></i>
-            <i className="fas fa-chevron-down ml-20 icon"></i>
+            <i class="fas fa-external-link-square-alt fa-2x ml-36 link"></i>{" "}
           </div>
-          <p className="heading mx-2">{card.header}</p>
-          <p className="duration text-xs mx-2">{card.tags}</p>
+          <div className="flex  pt-3 ml-2 text-xs">
+            <p className="text-netflix-green font-semibold">
+              {Math.floor(Math.random() * (93 - 98) + 100)}%
+            </p>{" "}
+            <p className="ml-2"> 2020</p>
+            <p className="ml-2 border-1 border-white px-1"> 12</p>
+          </div>
+          <p className="duration text-xs mx-2 pb-2">{card.tags}</p>
         </div>
       </div>
     </>

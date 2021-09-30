@@ -1,0 +1,23 @@
+.modalClosed {
+  height: 0px;
+}
+.modalOpen {
+  animation: blowUpContent 0.2s linear;
+}
+.modlaImage {
+  background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0) 0%, #141414 100%);
+}
+@keyframes blowUpContent {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  99.9% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}

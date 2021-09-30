@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,aAAa,CAAC;EACZ,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,IAAI;EAChB,gBAAgB,EAAE,EAAE;CAMrB;;AATD,AAKE,aALW,AAKV,MAAM,CAAC;EACN,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,IAAI;CACjB",
-    "sources": [
-        "VideoModal.scss"
-    ],
-    "names": [],
-    "file": "VideoModal.css"
-}

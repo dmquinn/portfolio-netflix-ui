@@ -1,14 +1,16 @@
 import React, { useEffect, useRef, useState } from "react";
-import "../VideoModal.css";
+import { ProgressBar } from "react-bootstrap";
 import Forward from "../images/forward.svg";
 import Backward from "../images/backward.svg";
-import "../VideoModal.css";
+import "../stylesheets/VideoModal.css";
 
 const VideoModal = ({ videoIsOpen, modalData, setVideoIsOpen, setIsOpen }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const vidRef = useRef(null);
+  const thisTime = vidRef.current.currentTime;
+
   const handlePlayVideo = () => {
-    !isPlaying ? setIsPlaying(true) : setIsPlaying(false);
+    isPlaying === false ? setIsPlaying(true) : setIsPlaying(false);
     isPlaying ? vidRef.current.play() : vidRef.current.pause();
   };
 
@@ -16,7 +18,12 @@ const VideoModal = ({ videoIsOpen, modalData, setVideoIsOpen, setIsOpen }) => {
     setIsOpen(false);
     setVideoIsOpen(false);
   };
-
+  // const handleForward = () => {
+  //   vidRef.current.seekTo(vidRef.current.getCurrentTime() + 10);
+  // };
+  useEffect(() => {
+    console.log(thisTime);
+  }, [thisTime]);
   return (
     <>
       {videoIsOpen && (
@@ -29,41 +36,43 @@ const VideoModal = ({ videoIsOpen, modalData, setVideoIsOpen, setIsOpen }) => {
             </div>
             <video
               width="100%"
-              height="100%"
+              height="80%"
+              fullScreen
               ref={vidRef}
               className="inline-block align-middle"
             >
               <source src={modalData.card.video} type="video/mp4" />
             </video>
             <div className="flex flex-col">
-              <div
-                className="progress-bar"
-                role="progressbar"
-                style={{ width: "100vw", zIndex: "199", height: "20px" }}
-                aria-valuenow=""
-                aria-valuemin="0"
-                aria-valuemax="1500"
-              ></div>
-              <div className="videoToolbar absolute bottom-0 left-0 z-10 flex flex-row w-full px-5 py-6 bg-gradient-to-t from-netflix-black ">
-                <div className="progress"></div>
-                <i
-                  className={
-                    !isPlaying ? "fas fa-pause fa-2x" : "fas fa-play fa-2x"
-                  }
-                  onClick={handlePlayVideo}
-                ></i>
-                <img
-                  src={Backward}
-                  className="h-20 pl-7 -mt-2"
-                  onClick={() => vidRef.current.currentTime + 10}
-                  alt=""
-                />
-                <img src={Forward} className="h-20 pl-5 -mt-2" />
-                <p className="ml-5">{modalData.card.header}</p>
-                <p className="text-netflix-grey ml-5">S1:E1:</p>
-                <p className="text-netflix-grey ml-5">
-                  {modalData.card.subHeader}
-                </p>
+              <div className="videoToolbar absolute -bottom-5 left-0 z-10 w-full px-5 py-6 bg-gradient-to-t from-netflix-black ">
+                <div className="flex flex-row w-full">
+                  <div className="progress-bar absolute bottom-36 h-2 z-50 w-11/12 bg-red">
+                    {" "}
+                    <ProgressBar variant="danger" now={thisTime} />
+                  </div>{" "}
+                </div>
+                <div className="flex flex-row w-full">
+                  <i
+                    className={
+                      isPlaying === false
+                        ? "fas fa-play fa-2x"
+                        : "fas fa-pause fa-2x"
+                    }
+                    onClick={handlePlayVideo}
+                  ></i>
+                  <img
+                    src={Backward}
+                    className="h-20 pl-7 -mt-2"
+                    // onClick={handleForward}
+                    alt=""
+                  />
+                  <img src={Forward} className="h-20 pl-5 -mt-2" alt="" />
+                  <p className="ml-5">{modalData.card.header}</p>
+                  <p className="text-netflix-grey ml-5">S1:E1:</p>
+                  <p className="text-netflix-grey ml-5">
+                    {modalData.card.subHeader}
+                  </p>
+                </div>
               </div>
             </div>
           </div>

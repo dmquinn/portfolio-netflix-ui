@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,SAAS,CAAC;EACR,UAAU,EAAE,MAAM;EAClB,UAAU,EAAE,uDAAuD,EACjE,qKAAqK;EACvK,eAAe,EAAE,KAAK;CAKvB;;AATD,AAKE,SALO,CAKP,EAAE;AALJ,SAAS,CAMP,EAAE,CAAC;EACD,WAAW,EAAE,mBAAmB;CACjC",
-    "sources": [
-        "TopImage.scss"
-    ],
-    "names": [],
-    "file": "TopImage.css"
-}

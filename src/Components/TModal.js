@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import VideoModal from "./VideoModal";
-import "../Modal.css";
+import "../stylesheets/Modal.css";
 
 const TModal = ({ isOpen, setIsOpen, modalData }) => {
   const [videoIsOpen, setVideoIsOpen] = useState(false);
@@ -11,8 +11,11 @@ const TModal = ({ isOpen, setIsOpen, modalData }) => {
     <>
       {isOpen && (
         <>
-          <div className="justify-center items-center flex absolute inset-0 z-50 mt-10 modalOpen">
-            <div className="relative w-auto my-6 mx-auto max-w-3xl">
+          <div
+            className="justify-center items-center flex fixed inset-0 z-50 bg-modal-back"
+            onClick={() => setIsOpen(false)}
+          >
+            <div className="relative w-auto my-6 mx-auto max-w-3xl opacity-100 modalOpen">
               <div
                 className="w-full h-96 modalImage rounded-t-md"
                 style={{
@@ -81,7 +84,6 @@ const TModal = ({ isOpen, setIsOpen, modalData }) => {
               </div>
             </div>
           </div>
-          <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
         </>
       )}
       <VideoModal

@@ -1,0 +1,22 @@
+.videoToolbar {
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 2s;
+  animation: fadeout 2s ease-in;
+
+  &:hover {
+    opacity: 1;
+    transition: 0.2s;
+  }
+}
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,SAAS,CAAC;EACR,UAAU,EAAE,MAAM;EAClB,UAAU,EAAE,uDAAuD,EACjE,qKAAqK;EACvK,eAAe,EAAE,KAAK;EACtB,SAAS,EAAE,IAAI;CAKhB;;AAVD,AAME,SANO,CAMP,EAAE;AANJ,SAAS,CAOP,EAAE,CAAC;EACD,WAAW,EAAE,mBAAmB;CACjC",
+    "sources": [
+        "TopImage.scss"
+    ],
+    "names": [],
+    "file": "TopImage.css"
+}

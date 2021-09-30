@@ -1,0 +1,42 @@
+.react-multi-carousel-list {
+  overflow: visible !important;
+}
+
+.react-multi-carousel-item {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+  -webkit-transform-origin: 50% 80%;
+          transform-origin: 50% 80%;
+}
+
+.react-multi-carousel-item:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  z-index: 99;
+}
+
+.react-multiple-carousel__arrow {
+  position: absolute;
+  top: 0;
+  border-radius: 0px !important;
+  right: -4%;
+  width: 60px;
+  height: 57%;
+}
+
+.react-multiple-carousel__arrow--left {
+  left: -60px;
+}
+
+.link {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.link:hover {
+  opacity: 1;
+}
+/*# sourceMappingURL=Slider.css.map */

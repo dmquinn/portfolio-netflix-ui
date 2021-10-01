@@ -21,6 +21,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+/* top image container */
+.parent {
+  position: relative;
+  height: 40rem;
+  width: 100vw;
+}
+.text-banner {
+  width: 100%;
+  margin-left: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-end;
+}
+.all-sliders {
+  position: relative;
+  margin-top: 35rem;
+}
+@media screen and (max-width: 800px) {
+  .parent {
+    height: 10rem;
+    width: 100vw;
+  }
+  /* .text-banner {
+  } */
+  .all-sliders {
+    margin-top: 15rem;
+  }
+}
 .icon {
   background-color: #242323;
   border-radius: 50%;

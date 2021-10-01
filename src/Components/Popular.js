@@ -14,21 +14,18 @@ const Slider = ({ setIsOpen, setModalData, modalData }) => {
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 3,
-      slidesToSlide: 3, // optional, default to 1.
+      items: 2,
+      slidesToSlide: 2, // optional, default to 1.
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 2,
-      slidesToSlide: 2, // optional, default to 1.
+      items: 1,
+      slidesToSlide: 1, // optional, default to 1.
     },
   };
 
   return (
-    <div
-      style={{ overflowX: "visible", height: "100%" }}
-      className="px-5 ml-3 "
-    >
+    <div style={{ overflowX: "visible", height: "100%" }} className=" mx-14 ">
       <h3 className="text-white">Popular Projects</h3>
       <Carousel
         ssr
@@ -38,7 +35,7 @@ const Slider = ({ setIsOpen, setModalData, modalData }) => {
       >
         {SliderData.map((card, i) => {
           return (
-            <div className="">
+            <div>
               <SliderCard
                 card={card}
                 key={i}

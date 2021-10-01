@@ -25,7 +25,7 @@ const Fun = ({ setIsOpen, setModalData, modalData }) => {
   };
 
   return (
-    <div style={{ overflow: "visible" }} className="px-5 ml-3 ">
+    <div style={{ overflow: "visible" }} className="mx-14 ">
       <h3 className="text-white">Fun Stuff</h3>
       <Carousel
         ssr

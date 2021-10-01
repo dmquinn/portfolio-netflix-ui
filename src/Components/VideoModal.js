@@ -7,7 +7,7 @@ import "../stylesheets/VideoModal.css";
 const VideoModal = ({ videoIsOpen, modalData, setVideoIsOpen, setIsOpen }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const vidRef = useRef(null);
-  const thisTime = vidRef.current.currentTime;
+  // const [vidTime, setVidTime] = useState(vidRef.current.currentTime);
 
   const handlePlayVideo = () => {
     isPlaying === false ? setIsPlaying(true) : setIsPlaying(false);
@@ -21,9 +21,9 @@ const VideoModal = ({ videoIsOpen, modalData, setVideoIsOpen, setIsOpen }) => {
   // const handleForward = () => {
   //   vidRef.current.seekTo(vidRef.current.getCurrentTime() + 10);
   // };
-  useEffect(() => {
-    console.log(thisTime);
-  }, [thisTime]);
+  // useEffect(() => {
+  //   // vidTime !== null && console.log(vidTime);
+  // }, [vidTime]);
   return (
     <>
       {videoIsOpen && (
@@ -40,6 +40,7 @@ const VideoModal = ({ videoIsOpen, modalData, setVideoIsOpen, setIsOpen }) => {
               fullScreen
               ref={vidRef}
               className="inline-block align-middle"
+              autoplay={true}
             >
               <source src={modalData.card.video} type="video/mp4" />
             </video>
@@ -48,7 +49,7 @@ const VideoModal = ({ videoIsOpen, modalData, setVideoIsOpen, setIsOpen }) => {
                 <div className="flex flex-row w-full">
                   <div className="progress-bar absolute bottom-36 h-2 z-50 w-11/12 bg-red">
                     {" "}
-                    <ProgressBar variant="danger" now={thisTime} />
+                    <ProgressBar variant="danger" now={60} />
                   </div>{" "}
                 </div>
                 <div className="flex flex-row w-full">

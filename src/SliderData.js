@@ -7,6 +7,7 @@ import Weather from "./images/weather.svg";
 import Geogoi from "./images/geogoi.svg";
 import Player from "./images/player.svg";
 import TvMovies from "./images/tvmovies.svg";
+import Test from "./images/test.jpg";
 
 const cards = [
   {
@@ -73,7 +74,7 @@ const cards = [
     row: "fun",
   },
   {
-    image: Player,
+    image: Test,
     header: "header three",
     subHeader: "subheader three",
     tags: "MERN ⚬ Paypal ⚬ Full Stack",

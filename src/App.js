@@ -13,16 +13,18 @@ function App() {
     <div className="App h-screen flex flex-col w-full bg-netflix-black">
       <Header />
       <TopImage />
-      <div className="z-50  from-netflix-black">
-        <Popular setIsOpen={setIsOpen} setModalData={setModalData} />
+      <div className="all-sliders">
+        <div className="z-50  from-netflix-black">
+          <Popular setIsOpen={setIsOpen} setModalData={setModalData} />
+        </div>
+        <div className="z-40 -mt-20 bg-netflix-black">
+          <Fun />
+        </div>
+        <div className="z-40 -mt-20 bg-netflix-black">
+          <Stack />
+        </div>
+        <TModal isOpen={isOpen} setIsOpen={setIsOpen} modalData={modalData} />
       </div>
-      <div className="z-40 -mt-20 bg-netflix-black">
-        <Fun />
-      </div>
-      <div className="z-30 -mt-20 bg-netflix-black">
-        <Stack />
-      </div>
-      <TModal isOpen={isOpen} setIsOpen={setIsOpen} modalData={modalData} />
     </div>
   );
 }

@@ -9,18 +9,20 @@
 .react-multi-carousel-item:hover {
   transition: 0.3s;
   transform: scale(1.4);
-  z-index: 99;
+  z-index: 90 !important;
 }
 .react-multiple-carousel__arrow {
   position: absolute;
   top: 0;
   border-radius: 0px !important;
-  right: -4%;
   width: 60px;
-  height: 57%;
+  height: 58%;
 }
 .react-multiple-carousel__arrow--left {
-  left: -60px;
+  left: -3.5rem !important;
+}
+.react-multiple-carousel__arrow--right {
+  right: -3.5rem !important;
 }
 .link {
   cursor: pointer;

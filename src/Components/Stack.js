@@ -26,13 +26,10 @@ const Stack = ({ setIsOpen, setModalData, modalData }) => {
 
   return (
     <div style={{ height: "100%" }} className="mx-14 ">
-      <h3 className="text-white z-0">Popular Projects</h3>
-      <Carousel
-        ssr
-        partialVisbile
-        itemClassName="image-item"
-        responsive={responsive}
-      >
+      <h3 className="text-white" id="stack">
+        My Stack
+      </h3>
+      <Carousel ssr itemClassName="image-item" responsive={responsive}>
         {StackData.map((card, i) => {
           return (
             <div className="">

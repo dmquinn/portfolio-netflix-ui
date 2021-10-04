@@ -5,7 +5,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "../stylesheets/Slider.css";
 
-const Slider = ({ setIsOpen, setModalData, modalData }) => {
+const Popular = ({ setIsOpen, setModalData, modalData }) => {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -27,12 +27,7 @@ const Slider = ({ setIsOpen, setModalData, modalData }) => {
   return (
     <div style={{ overflowX: "visible", height: "100%" }} className=" mx-14 ">
       <h3 className="text-white">Popular Projects</h3>
-      <Carousel
-        ssr
-        partialVisbile
-        itemClassName="image-item"
-        responsive={responsive}
-      >
+      <Carousel ssr itemClassName="image-item" responsive={responsive}>
         {SliderData.map((card, i) => {
           return (
             <div>
@@ -51,4 +46,4 @@ const Slider = ({ setIsOpen, setModalData, modalData }) => {
   );
 };
 
-export default Slider;
+export default Popular;

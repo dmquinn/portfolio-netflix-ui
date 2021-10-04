@@ -33,7 +33,15 @@ const SliderCard = ({ card, setIsOpen, setModalData, modalData }) => {
           <div className="flex">
             <i className="fas fa-play ml-4 icon white"></i>
             <i className="fas fa-plus ml-2 icon"></i>
-            <i class="fas fa-external-link-square-alt fa-2x ml-36 link"></i>{" "}
+            <a
+              href={card.link}
+              target="_blank"
+              rel="noreferrer"
+              className="no-underline text-white"
+            >
+              {" "}
+              <i class="fas fa-external-link-square-alt fa-2x ml-2 link"></i>{" "}
+            </a>{" "}
           </div>
           <div className="flex  pt-3 ml-2 text-xs">
             <p className="text-netflix-green font-semibold">

@@ -45,7 +45,14 @@ const TModal = ({ isOpen, setIsOpen, modalData }) => {
                     <i className="fas fa-play mr-3"></i>
                     Play
                   </button>{" "}
-                  <i className="fab fa-github fa-3x ml-5 modalIcon "></i>
+                  <a
+                    href={modalData.card.github}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {" "}
+                    <i className="fab fa-github fa-3x ml-5 modalIcon "></i>
+                  </a>
                 </div>
 
                 <div className="grid grid-cols-5 gap-3">

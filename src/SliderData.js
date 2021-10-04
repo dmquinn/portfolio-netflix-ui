@@ -21,6 +21,8 @@ const cards = [
     genres: "Full Website, E-Commerce",
     stackText:
       "React, Redux, Node, Express, MongoDB, React-Bootstrap, Paypal Sandbox",
+    github: "https://github.com/dmquinn/MERN-e-commerce",
+    link: "http://milkrecords.herokuapp.com/",
   },
   {
     image: Olsen,
@@ -31,6 +33,8 @@ const cards = [
     genres: "Web App",
     stackText:
       "React, Redux, Node, Express, MongoDB, Bootstrap-5, Youtube API, Spotify API",
+    github: "https://github.com/dmquinn/olsen-video",
+    link: "https://olsenvideo.herokuapp.com/",
   },
   {
     image: Busckr,
@@ -38,6 +42,7 @@ const cards = [
     subHeader: "subheader three",
     tags: "Spotify Api ⚬ Youtube Api ⚬ MongoDB",
     stack: "fab fa-react",
+    github: "https://github.com/dmquinn/BUSCKR-local-events-app",
   },
   {
     image: PhotoEditor,
@@ -45,6 +50,7 @@ const cards = [
     subHeader: "subheader three",
     tags: "MERN ⚬ Paypal ⚬ Full Stack",
     row: "fun",
+    github: "https://github.com/dmquinn/photo-editor",
   },
   {
     image: Weather,

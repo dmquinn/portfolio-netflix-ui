@@ -29,7 +29,6 @@ const Fun = ({ setIsOpen, setModalData, modalData }) => {
       <h3 className="text-white">Fun Stuff</h3>
       <Carousel
         ssr
-        partialVisbile
         itemClassName="image-item"
         responsive={responsive}
       >

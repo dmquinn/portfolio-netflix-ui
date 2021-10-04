@@ -1,14 +1,16 @@
 .videoToolbar {
   opacity: 0;
   transition: 0.5s;
-  transition-delay: 2s;
+  transition-delay: 1s;
   animation: fadeout 2s ease-in;
 
   &:hover {
     opacity: 1;
     transition: 0.2s;
+    color: #dadada;
   }
 }
+
 @keyframes fadeout {
   0% {
     opacity: 1;

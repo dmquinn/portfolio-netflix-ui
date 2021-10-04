@@ -17,9 +17,13 @@ const TopImage = () => {
             About
           </button>
           <button className="bg-opacity-50 text-white font-bold rounded-3 ml-3 px-8 shadow-md uppercase tracking-wider">
-            <a href="https://github.com/dmquinn?">
+            <a
+              href="https://github.com/dmquinn?"
+              target="_blank"
+              rel="noreferrer"
+            >
               {" "}
-              <i className="fab fa-github fa-3x text-white" />
+              <i className="fab fa-github fa-3x text-white" id="popular" />
             </a>
           </button>
         </div>

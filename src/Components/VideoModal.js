@@ -3,14 +3,16 @@ import { ProgressBar } from "react-bootstrap";
 import Forward from "../images/forward.svg";
 import Backward from "../images/backward.svg";
 import "../stylesheets/VideoModal.css";
+import "../stylesheets/ProgressBar.css";
 
 const VideoModal = ({ videoIsOpen, modalData, setVideoIsOpen, setIsOpen }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const vidRef = useRef(null);
-  // const [vidTime, setVidTime] = useState(vidRef.current.currentTime);
+  const [vidTime, setVidTime] = useState(0);
 
   const handlePlayVideo = () => {
-    isPlaying === false ? setIsPlaying(true) : setIsPlaying(false);
+    isPlaying ? setIsPlaying(false) : setIsPlaying(true);
+    console.log(isPlaying);
     isPlaying ? vidRef.current.play() : vidRef.current.pause();
   };
 
@@ -19,11 +21,25 @@ const VideoModal = ({ videoIsOpen, modalData, setVideoIsOpen, setIsOpen }) => {
     setVideoIsOpen(false);
   };
   // const handleForward = () => {
-  //   vidRef.current.seekTo(vidRef.current.getCurrentTime() + 10);
+  //   const newTime = (vidRef.current.duration / 100) * 10;
+  //   setVidTime(newTime);
   // };
-  // useEffect(() => {
-  //   // vidTime !== null && console.log(vidTime);
-  // }, [vidTime]);
+  const handleVideoProgress = (event) => {
+    const manualChange = Number(event.target.value);
+    vidRef.current.currentTime = (vidRef.current.duration / 100) * manualChange;
+    setIsPlaying({
+      manualChange,
+    });
+  };
+  const handleOnTimeUpdate = () => {
+    const progress =
+      (vidRef.current.currentTime / vidRef.current.duration) * 100;
+    setVidTime(progress);
+  };
+  useEffect(() => {
+    setIsPlaying(true);
+  }, []);
+
   return (
     <>
       {videoIsOpen && (
@@ -37,27 +53,34 @@ const VideoModal = ({ videoIsOpen, modalData, setVideoIsOpen, setIsOpen }) => {
             <video
               width="100%"
               height="80%"
-              fullScreen
+              // fullscreen
               ref={vidRef}
               className="inline-block align-middle"
               autoplay={true}
+              onTimeUpdate={handleOnTimeUpdate}
             >
               <source src={modalData.card.video} type="video/mp4" />
             </video>
             <div className="flex flex-col">
               <div className="videoToolbar absolute -bottom-5 left-0 z-10 w-full px-5 py-6 bg-gradient-to-t from-netflix-black ">
-                <div className="flex flex-row w-full">
-                  <div className="progress-bar absolute bottom-36 h-2 z-50 w-11/12 bg-red">
+                <div className="flex flex-row w-full bg-white">
+                  <div className="progress-bar absolute bottom-36 h-2 z-50 w-11/12 bg-green">
                     {" "}
-                    <ProgressBar variant="danger" now={60} />
+                    <input
+                      type="range"
+                      min="0"
+                      max="100"
+                      value={vidTime}
+                      style={{ width: `calc(${vidTime}%)` }}
+                      className="range-slider"
+                      onChange={(e) => handleVideoProgress(e)}
+                    />
                   </div>{" "}
                 </div>
                 <div className="flex flex-row w-full">
                   <i
                     className={
-                      isPlaying === false
-                        ? "fas fa-play fa-2x"
-                        : "fas fa-pause fa-2x"
+                      !!isPlaying ? "fas fa-play fa-2x" : "fas fa-pause fa-2x"
                     }
                     onClick={handlePlayVideo}
                   ></i>

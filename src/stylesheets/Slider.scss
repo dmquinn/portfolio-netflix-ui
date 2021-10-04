@@ -4,12 +4,21 @@
 .react-multi-carousel-item {
   transition: 0.3s;
   position: relative;
-  transform-origin: 50% 80%;
-}
-.react-multi-carousel-item:hover {
-  transition: 0.3s;
-  transform: scale(1.4);
-  z-index: 90 !important;
+  z-index: 0;
+  &:hover {
+    transition: 0.3s;
+    transform: scale(1.4);
+    z-index: 9 !important;
+  }
+  &:first-child {
+    transform-origin: 0% 80%;
+  }
+  &:nth-child(5n + 5) {
+    transform-origin: 100% 80%;
+  }
+  &:nth-child(6n) {
+    transform-origin: 0% 80%;
+  }
 }
 .react-multiple-carousel__arrow {
   position: absolute;

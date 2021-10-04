@@ -2,8 +2,8 @@
   opacity: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  -webkit-transition-delay: 2s;
-          transition-delay: 2s;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
   -webkit-animation: fadeout 2s ease-in;
           animation: fadeout 2s ease-in;
 }

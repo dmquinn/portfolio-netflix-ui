@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import ProfilePic from "../images/profilePic.png";
+import ProfilePic from "../images/profilePic.svg";
 
 const Header = () => {
   const [navBackground, setNavBackground] = useState(false);
@@ -19,26 +19,32 @@ const Header = () => {
   }, []);
   return (
     <nav
-      className="relative flex flex-wrap items-center justify-between py-1 bg-gradient-to-b from-black mb-3 sticky top-0 z-50"
+      className="relative flex flex-wrap items-center justify-between py-1 bg-gradient-to-b from-black mb-3 lg:sticky top-0 z-50"
       style={{
         transition: "1s ease",
         backgroundColor: navBackground ? "#141414" : "transparent",
       }}
     >
-      <div className="container mx-auto flex flex-wrap items-center justify-between">
-        <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+      <div className="px-5 flex lg:flex-wrap lg:items-center justify-between">
+        <div className="w-full relative flex justify-between w-auto">
           <a href="https://fontmeme.com/netflix-font/">
             <img
               src="https://fontmeme.com/permalink/210916/161f87475cfd13e0b716890b557a6a9a.png"
               alt="netflix-font"
               border="0"
+              className="sm: h-7 lg:h-12"
             />
           </a>
-          <button
-            className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
-            type="button"
-          ></button>
         </div>
+        <a
+          href="#popular"
+          className="text-white no-underline px-3 drop-shadow-sm"
+        >
+          Projects
+        </a>
+        <a href="#stack" className="text-white no-underline px-3">
+          Stack
+        </a>
         <div
           className="lg:flex flex-grow items-center"
           id="example-navbar-warning"
@@ -49,19 +55,11 @@ const Header = () => {
                 className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
                 href="#pablo"
               >
-                Discover
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                href="#pablo"
-              >
-                <i className="fas fa-bell text-3xl"></i>{" "}
+                <i className="fas fa-bell text-3xl "></i>{" "}
               </a>
             </li>
             <li className="nav-item w-14">
-              <img src={ProfilePic} alt=""></img>
+              <img src={ProfilePic} alt="" className="h-12 pt-2 sm:px-3"></img>
             </li>
           </ul>
         </div>

@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio-netflix-ui/static/css/main.8ff466b8.chunk.css",
-    "main.js": "/portfolio-netflix-ui/static/js/main.5074c36a.chunk.js",
-    "main.js.map": "/portfolio-netflix-ui/static/js/main.5074c36a.chunk.js.map",
+    "main.css": "/portfolio-netflix-ui/static/css/main.77653c6d.chunk.css",
+    "main.js": "/portfolio-netflix-ui/static/js/main.c6ad0360.chunk.js",
+    "main.js.map": "/portfolio-netflix-ui/static/js/main.c6ad0360.chunk.js.map",
     "runtime-main.js": "/portfolio-netflix-ui/static/js/runtime-main.b29bc6fc.js",
     "runtime-main.js.map": "/portfolio-netflix-ui/static/js/runtime-main.b29bc6fc.js.map",
     "static/css/2.284995ac.chunk.css": "/portfolio-netflix-ui/static/css/2.284995ac.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.a2ececc1.chunk.js.map": "/portfolio-netflix-ui/static/js/2.a2ececc1.chunk.js.map",
     "index.html": "/portfolio-netflix-ui/index.html",
     "static/css/2.284995ac.chunk.css.map": "/portfolio-netflix-ui/static/css/2.284995ac.chunk.css.map",
-    "static/css/main.8ff466b8.chunk.css.map": "/portfolio-netflix-ui/static/css/main.8ff466b8.chunk.css.map",
+    "static/css/main.77653c6d.chunk.css.map": "/portfolio-netflix-ui/static/css/main.77653c6d.chunk.css.map",
     "static/js/2.a2ececc1.chunk.js.LICENSE.txt": "/portfolio-netflix-ui/static/js/2.a2ececc1.chunk.js.LICENSE.txt",
     "static/media/anomic.5593a25e.svg": "/portfolio-netflix-ui/static/media/anomic.5593a25e.svg",
     "static/media/backward.816d70fb.svg": "/portfolio-netflix-ui/static/media/backward.816d70fb.svg",
@@ -25,7 +25,7 @@
     "static/media/milk.b4af4360.svg": "/portfolio-netflix-ui/static/media/milk.b4af4360.svg",
     "static/media/mongo.c1f5320d.svg": "/portfolio-netflix-ui/static/media/mongo.c1f5320d.svg",
     "static/media/node.d6a494c7.svg": "/portfolio-netflix-ui/static/media/node.d6a494c7.svg",
-    "static/media/olsen.f8256a8d.svg": "/portfolio-netflix-ui/static/media/olsen.f8256a8d.svg",
+    "static/media/olsen.6af09194.svg": "/portfolio-netflix-ui/static/media/olsen.6af09194.svg",
     "static/media/photoEditor.846450d7.svg": "/portfolio-netflix-ui/static/media/photoEditor.846450d7.svg",
     "static/media/player.4ac88a70.svg": "/portfolio-netflix-ui/static/media/player.4ac88a70.svg",
     "static/media/profilePic.b31d1a79.svg": "/portfolio-netflix-ui/static/media/profilePic.b31d1a79.svg",
@@ -34,14 +34,14 @@
     "static/media/sass.8145aa4d.svg": "/portfolio-netflix-ui/static/media/sass.8145aa4d.svg",
     "static/media/tailwind.a64d6ad7.svg": "/portfolio-netflix-ui/static/media/tailwind.a64d6ad7.svg",
     "static/media/test.235aff74.jpg": "/portfolio-netflix-ui/static/media/test.235aff74.jpg",
-    "static/media/tvmovies.480f55d4.svg": "/portfolio-netflix-ui/static/media/tvmovies.480f55d4.svg",
+    "static/media/tvmovies.01aef6be.svg": "/portfolio-netflix-ui/static/media/tvmovies.01aef6be.svg",
     "static/media/weather.5e4e13d3.svg": "/portfolio-netflix-ui/static/media/weather.5e4e13d3.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.b29bc6fc.js",
     "static/css/2.284995ac.chunk.css",
     "static/js/2.a2ececc1.chunk.js",
-    "static/css/main.8ff466b8.chunk.css",
-    "static/js/main.5074c36a.chunk.js"
+    "static/css/main.77653c6d.chunk.css",
+    "static/js/main.c6ad0360.chunk.js"
   ]
 }

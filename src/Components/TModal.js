@@ -66,7 +66,7 @@ const TModal = ({ isOpen, setIsOpen, modalData }) => {
                   </div>
                   <div className="col-span-2 pt-10 px-3 ">
                     <p className="text-netflix-grey">
-                      Director:
+                      Author:
                       <span className="text-white"> Daniel Muprhy</span>
                     </p>
                     <p className="text-netflix-grey">

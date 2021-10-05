@@ -30,6 +30,7 @@ code {
 }
 .text-banner {
   width: 100%;
+  max-width: 75%;
   height: 25rem;
   margin-left: 3.5rem;
   display: flex;

@@ -101,7 +101,7 @@ const VideoModal = ({ videoIsOpen, modalData, setVideoIsOpen, setIsOpen }) => {
                     onClick={handleForward}
                   />
                   <p className="ml-5">{modalData.card.header}</p>
-                  <p className="text-netflix-grey ml-5">S1:E1:</p>
+                  <p className="text-netflix-grey ml-5 invisible">S1:E1:</p>
                   <p className="text-netflix-grey ml-5">
                     {modalData.card.subHeader}
                   </p>

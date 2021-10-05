@@ -26,7 +26,7 @@ const Fun = ({ setIsOpen, setModalData, modalData }) => {
 
   return (
     <div style={{ overflow: "visible" }} className="mx-14 ">
-      <h3 className="text-white">Fun Stuff</h3>
+      <h3 className="text-white pb-3">Fun Stuff</h3>
       <Carousel ssr itemClassName="image-item" responsive={responsive}>
         {SliderData.map((card, i) => {
           return (

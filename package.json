@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-    "homepage": "https://github.com/dmquinn/portfolio.io.git/",
+  "homepage": "https://dmquinn.github.io/portfolio.io/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,6 +9,7 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^5.1.0",
+    "gh-pages": "^3.2.3",
     "github-pages": "^3.0.2",
     "netslider": "^1.3.5",
     "react": "^17.0.2",
@@ -25,8 +26,8 @@
   },
   "scripts": {
     "start": "craco start",
-     "predeploy": "npm run build", 
-    "deploy": "gh-pages -d build", 
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"

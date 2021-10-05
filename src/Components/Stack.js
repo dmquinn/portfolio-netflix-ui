@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import SliderCard from "./SliderCard";
+import React from "react";
+import StackCard from "./StackCard";
 import { StackData } from "../StackData";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -14,8 +14,8 @@ const Stack = ({ setIsOpen, setModalData, modalData }) => {
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2,
-      slidesToSlide: 2, // optional, default to 1.
+      items: 3,
+      slidesToSlide: 3, // optional, default to 1.
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
@@ -32,15 +32,13 @@ const Stack = ({ setIsOpen, setModalData, modalData }) => {
       <Carousel ssr itemClassName="image-item" responsive={responsive}>
         {StackData.map((card, i) => {
           return (
-            <div className="">
-              <SliderCard
-                card={card}
-                key={i}
-                setIsOpen={setIsOpen}
-                setModalData={setModalData}
-                modalData={modalData}
-              />
-            </div>
+            <StackCard
+              card={card}
+              key={i}
+              setIsOpen={setIsOpen}
+              setModalData={setModalData}
+              modalData={modalData}
+            />
           );
         })}
       </Carousel>

@@ -56,4 +56,10 @@
 .link:hover {
   opacity: 1;
 }
+
+@media screen and (max-width: 700px) {
+  .react-multiple-carousel__arrow {
+    visibility: hidden;
+  }
+}
 /*# sourceMappingURL=Slider.css.map */

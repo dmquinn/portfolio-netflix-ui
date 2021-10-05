@@ -40,7 +40,7 @@ const SliderCard = ({ card, setIsOpen, setModalData, modalData }) => {
               className="no-underline text-white"
             >
               {" "}
-              <i class="fas fa-external-link-square-alt fa-2x ml-2 link"></i>{" "}
+              <i className="fas fa-external-link-square-alt fa-2x ml-2 link"></i>{" "}
             </a>{" "}
           </div>
           <div className="flex  pt-3 ml-2 text-xs">

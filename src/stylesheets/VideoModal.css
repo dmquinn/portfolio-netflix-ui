@@ -12,6 +12,13 @@
   opacity: 1;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  color: #dadada;
+}
+
+.video {
+  height: 80%;
+  position: relative;
+  top: 10%;
 }
 
 @-webkit-keyframes fadeout {

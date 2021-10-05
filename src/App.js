@@ -10,21 +10,25 @@ function App() {
   const [isOpen, setIsOpen] = useState(false);
   const [modalData, setModalData] = useState({});
   return (
-    <div className="App h-screen flex flex-col w-full bg-netflix-black">
+    <div className="App h-full flex flex-col w-full bg-netflix-black">
       <Header />
       <TopImage />
       <div className="divider" />
 
-      <div className="z-40  netflix-black">
+      <div className="z-40">
         <Popular setIsOpen={setIsOpen} setModalData={setModalData} />
       </div>
       <div className="z-30 -mt-20">
-        <Fun />
+        <Fun setIsOpen={setIsOpen} setModalData={setModalData} />
       </div>
       <div className="z-20 -mt-20">
         <Stack />
       </div>
+
       <TModal isOpen={isOpen} setIsOpen={setIsOpen} modalData={modalData} />
+      <br />
+      <br />
+      <br />
     </div>
   );
 }

@@ -1,23 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import VideoModal from "./VideoModal";
 import "../stylesheets/Modal.css";
 
 const TModal = ({ isOpen, setIsOpen, modalData }) => {
   const [videoIsOpen, setVideoIsOpen] = useState(false);
-  const handleClick = (e) => {
-    console.log(e.target);
-  };
+
   return (
     <>
       {isOpen && (
         <>
           <div
-            className="justify-center items-center flex fixed inset-0 z-50 bg-modal-back"
+            className="justify-center items-center flex fixed inset-0 z-50 bg-modal-back text-xs lg:text-base overflow-y-auto"
             onClick={() => setIsOpen(false)}
           >
             <div className="relative w-auto my-6 mx-auto max-w-3xl opacity-100 modalOpen">
               <div
-                className="w-full h-96 modalImage rounded-t-md"
+                className="w-full h-96 rounded-t-md"
                 style={{
                   background: `linear-gradient(rgba(0, 0, 0, 0) 0%, #141414 100%),url(${modalData.card.image})`,
                   backgroundSize: "cover",
@@ -35,7 +33,7 @@ const TModal = ({ isOpen, setIsOpen, modalData }) => {
                 </div>
               </div>{" "}
               <div className=" shadow-lg relative flex flex-col w-full bg-netflix-black text-white to-transparent px-12 rounded-b-md">
-                <div className="flex -mt-20">
+                <div className="flex -mt-32 lg:-mt-20">
                   {" "}
                   <button
                     className=" bg-black w-25 text-netflix-black bg-white rounded-md p-2 font-extrabold"

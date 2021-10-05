@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import SliderCard from "./SliderCard";
 import SliderData from "../SliderData";
 import Carousel from "react-multi-carousel";
@@ -14,8 +14,8 @@ const Fun = ({ setIsOpen, setModalData, modalData }) => {
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2,
-      slidesToSlide: 2, // optional, default to 1.
+      items: 3,
+      slidesToSlide: 3, // optional, default to 1.
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
@@ -27,23 +27,17 @@ const Fun = ({ setIsOpen, setModalData, modalData }) => {
   return (
     <div style={{ overflow: "visible" }} className="mx-14 ">
       <h3 className="text-white">Fun Stuff</h3>
-      <Carousel
-        ssr
-        itemClassName="image-item"
-        responsive={responsive}
-      >
+      <Carousel ssr itemClassName="image-item" responsive={responsive}>
         {SliderData.map((card, i) => {
           return (
             card.row === "fun" && (
-              <div className="cardContainer">
-                <SliderCard
-                  card={card}
-                  key={i}
-                  setIsOpen={setIsOpen}
-                  setModalData={setModalData}
-                  modalData={modalData}
-                />
-              </div>
+              <SliderCard
+                card={card}
+                key={i}
+                setIsOpen={setIsOpen}
+                setModalData={setModalData}
+                modalData={modalData}
+              />
             )
           );
         })}

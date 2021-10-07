@@ -26,7 +26,7 @@ const Header = () => {
       }}
     >
       <div className="md:px-5 flex lg:items-center">
-        <a href="https://fontmeme.com/netflix-font/">
+        <a href="/">
           <img
             src="https://fontmeme.com/permalink/210916/161f87475cfd13e0b716890b557a6a9a.png"
             alt="netflix-font"
@@ -49,7 +49,7 @@ const Header = () => {
           <li className="nav-item py-2">
             <a
               className="px-3  flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-              href="#pablo"
+              href="dingdingding"
             >
               <i className="fas fa-bell text-3xl "></i>{" "}
             </a>

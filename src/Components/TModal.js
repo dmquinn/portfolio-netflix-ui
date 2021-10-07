@@ -4,6 +4,7 @@ import "../stylesheets/Modal.css";
 
 const TModal = ({ isOpen, setIsOpen, modalData }) => {
   const [videoIsOpen, setVideoIsOpen] = useState(false);
+  const [aboutIsOpen, setAboutIsOpen] = useState(false);
 
   return (
     <>

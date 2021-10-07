@@ -26,9 +26,7 @@ function App() {
       </div>
 
       <TModal isOpen={isOpen} setIsOpen={setIsOpen} modalData={modalData} />
-      <br />
-      <br />
-      <br />
+      <div className="w-100 h-40 bg-netflix-black"></div>
     </div>
   );
 }

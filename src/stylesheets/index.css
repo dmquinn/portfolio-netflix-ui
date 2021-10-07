@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 html {
-  /* min-height: 5000px; */
   background-color: #141414;
   scroll-behavior: smooth;
 }
@@ -48,11 +47,6 @@ code {
   .divider {
     margin-top: 22rem;
   }
-  /* .text-banner {
-  } */
-  /* .all-sliders {
-    margin-top: 15rem;
-  } */
 }
 .icon {
   background-color: #242323;

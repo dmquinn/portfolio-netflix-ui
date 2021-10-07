@@ -26,7 +26,7 @@ const Popular = ({ setIsOpen, setModalData, modalData }) => {
 
   return (
     <div style={{ overflowX: "visible", height: "100%" }} className=" mx-14 ">
-      <h3 className="text-white pb-3">Popular Projects</h3>
+      <div className="text-white pb-3 text-2xl">Popular Projects</div>
       <Carousel ssr itemClassName="image-item" responsive={responsive}>
         {SliderData.map((card, i) => {
           return (

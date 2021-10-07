@@ -9,12 +9,12 @@ const TopImage = () => {
     <div className="parent pb--20">
       <div className="h-screen topImage bg-gradient-to-b absolute"></div>
       <div className="text-banner bg-opacity-0 absolute">
-        <h2 className="sm:text-xl md:text-4xl font-bold mb-2 text-white align-text-bottom">
+        <div className="text-2xl md:text-4xl lg:texr-4xl font-bold mb-2 text-white align-text-bottom">
           Frontend Developer
-        </h2>
-        <h3 className="sm:text-xs md:text-2xl mb-8 text-white sm:max-w-xs lg:max-w-lg">
+        </div>
+        <div className="text-lg md:text-2xl mb-8 text-white sm:max-w-xs lg:max-w-lg font-semibold">
           Interested in all things visual, and working with a UI-mindset.
-        </h3>
+        </div>
         <div className=" flex py-3 w-full">
           <button
             className="bg-white font-bold rounded-3 shadow-lg px-4 py-3"
@@ -24,7 +24,7 @@ const TopImage = () => {
           </button>
           <a
             className="bg-opacity-60 ml-3 bg-netflix-grey font-bold rounded-3 shadow-lg px-4 text-white flex items-center no-underline"
-            href="/"
+            href="https://github.com/dmquinn?"
             target="_blank"
             rel="noreferrer"
           >

@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio-netflix-ui/static/css/main.77653c6d.chunk.css",
-    "main.js": "/portfolio-netflix-ui/static/js/main.c6ad0360.chunk.js",
-    "main.js.map": "/portfolio-netflix-ui/static/js/main.c6ad0360.chunk.js.map",
+    "main.css": "/portfolio-netflix-ui/static/css/main.d96c0036.chunk.css",
+    "main.js": "/portfolio-netflix-ui/static/js/main.faf3182c.chunk.js",
+    "main.js.map": "/portfolio-netflix-ui/static/js/main.faf3182c.chunk.js.map",
     "runtime-main.js": "/portfolio-netflix-ui/static/js/runtime-main.b29bc6fc.js",
     "runtime-main.js.map": "/portfolio-netflix-ui/static/js/runtime-main.b29bc6fc.js.map",
     "static/css/2.284995ac.chunk.css": "/portfolio-netflix-ui/static/css/2.284995ac.chunk.css",
-    "static/js/2.a2ececc1.chunk.js": "/portfolio-netflix-ui/static/js/2.a2ececc1.chunk.js",
-    "static/js/2.a2ececc1.chunk.js.map": "/portfolio-netflix-ui/static/js/2.a2ececc1.chunk.js.map",
+    "static/js/2.5bc2b9d8.chunk.js": "/portfolio-netflix-ui/static/js/2.5bc2b9d8.chunk.js",
+    "static/js/2.5bc2b9d8.chunk.js.map": "/portfolio-netflix-ui/static/js/2.5bc2b9d8.chunk.js.map",
     "index.html": "/portfolio-netflix-ui/index.html",
     "static/css/2.284995ac.chunk.css.map": "/portfolio-netflix-ui/static/css/2.284995ac.chunk.css.map",
-    "static/css/main.77653c6d.chunk.css.map": "/portfolio-netflix-ui/static/css/main.77653c6d.chunk.css.map",
-    "static/js/2.a2ececc1.chunk.js.LICENSE.txt": "/portfolio-netflix-ui/static/js/2.a2ececc1.chunk.js.LICENSE.txt",
+    "static/css/main.d96c0036.chunk.css.map": "/portfolio-netflix-ui/static/css/main.d96c0036.chunk.css.map",
+    "static/js/2.5bc2b9d8.chunk.js.LICENSE.txt": "/portfolio-netflix-ui/static/js/2.5bc2b9d8.chunk.js.LICENSE.txt",
     "static/media/anomic.5593a25e.svg": "/portfolio-netflix-ui/static/media/anomic.5593a25e.svg",
     "static/media/backward.816d70fb.svg": "/portfolio-netflix-ui/static/media/backward.816d70fb.svg",
     "static/media/bootstrap.4fcdbc8a.svg": "/portfolio-netflix-ui/static/media/bootstrap.4fcdbc8a.svg",
@@ -40,8 +40,8 @@
   "entrypoints": [
     "static/js/runtime-main.b29bc6fc.js",
     "static/css/2.284995ac.chunk.css",
-    "static/js/2.a2ececc1.chunk.js",
-    "static/css/main.77653c6d.chunk.css",
-    "static/js/main.c6ad0360.chunk.js"
+    "static/js/2.5bc2b9d8.chunk.js",
+    "static/css/main.d96c0036.chunk.css",
+    "static/js/main.faf3182c.chunk.js"
   ]
 }

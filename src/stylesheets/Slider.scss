@@ -1,6 +1,10 @@
 .react-multi-carousel-list {
   overflow: visible !important;
 }
+img {
+  height: 128px;
+  width: 228px;
+}
 .react-multi-carousel-item {
   transition: 0.3s;
   position: relative;

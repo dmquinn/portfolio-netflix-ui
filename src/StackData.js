@@ -1,7 +1,7 @@
 import React from "./images/react.svg";
 import Javascript from "./images/javascript.svg";
 import Html from "./images/html.svg";
-
+import Typescript from "./images/typescript.svg";
 import Css from "./images/css.svg";
 import Sass from "./images/sass.svg";
 import Tailwind from "./images/tailwind.svg";
@@ -9,20 +9,21 @@ import Express from "./images/express.svg";
 import Node from "./images/node.svg";
 import Mongo from "./images/mongo.svg";
 import Bootstrap from "./images/bootstrap.svg";
+import Graphql from "./images/graphql.svg";
+import Nextjs from "./images/nextjs.svg";
 
 export const StackData = [
-  { image: React, header: "React", tags: "Hooks ⚬ Context ⚬ Redux" },
-  { image: Javascript, header: "Javascript", tags: "Promises ⚬ ES6 ⚬ Vanilla" },
-  { image: Css, header: "CSS", tags: "Flex ⚬ Grid ⚬ Responsive UI" },
-  { image: Html, header: "HTML", tags: "Forms ⚬ Dom ⚬ Canvas" },
-  { image: Sass, header: "Sass", tags: "Flex ⚬ Layout" },
-  {
-    image: Tailwind,
-    header: "Tailwind",
-    tags: "Layout ⚬ Custom Themes ⚬ UI Library",
-  },
-  { image: Bootstrap, header: "Bootstrap", tags: "Grid ⚬ UI Library" },
-  { image: Express, header: "Express", tags: "REST API ⚬ Middleware" },
-  { image: Node, header: "Node", tags: "Controllers ⚬ REST API" },
-  { image: Mongo, header: "Mongo", tags: "Mongoose ⚬ Queries ⚬ Mongo Shell" },
+  { image: React, header: "React" },
+  { image: Javascript, header: "Javascript" },
+  { image: Nextjs, header: "Nextjs" },
+  { image: Html, header: "HTML" },
+  { image: Css, header: "CSS" },
+  { image: Typescript, header: "Typescript" },
+  { image: Graphql, header: "Graphql" },
+  { image: Sass, header: "Sass" },
+  { image: Tailwind, header: "Tailwind" },
+  { image: Bootstrap, header: "Bootstrap" },
+  { image: Express, header: "Express" },
+  { image: Node, header: "Node" },
+  { image: Mongo, header: "Mongo" },
 ];

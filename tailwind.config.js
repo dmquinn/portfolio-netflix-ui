@@ -9,6 +9,7 @@ module.exports = {
       "netflix-green": "#3cd83c",
       "netflix-grey": "#777777",
       "modal-back": "#00000088",
+      "title-yellow": "#ffd500",
     },
   },
   variants: {

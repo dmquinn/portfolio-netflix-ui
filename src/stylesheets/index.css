@@ -16,7 +16,9 @@ body {
   overflow-x: hidden;
   min-height: 100%;
 }
-
+img {
+  cursor: pointer;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

@@ -7,7 +7,8 @@ import Weather from "./images/weather.svg";
 import Geogoi from "./images/geogoi.svg";
 import Player from "./images/player.svg";
 import TvMovies from "./images/tvmovies.svg";
-import Test from "./images/test.jpg";
+import Sequencer from "./images/sequencer.svg";
+import GQLBlog from "./images/gqlblog.svg";
 
 const cards = [
   {
@@ -53,8 +54,34 @@ const cards = [
     link: "https://busckr.herokuapp.com/ ",
   },
   {
+    image: TvMovies,
+    info: "Using data and images from themoviedb API and thetvdb API, users can view top new releases in the top banner, toggle between movie mode and tv mode, watch trailers using dynamic embedded iframe (and search from the youtube api).  Features an incremental search function, 'flashlight' cursor.  This is recently refactored from a vanilla Javascript project to be built using React with Typescript",
+    video:
+      "https://res.cloudinary.com/drpdq0pui/video/upload/v1633431328/portfolio/movie_vyaxhz.mp4",
+    genres: "Web App",
+    header: "TV + Movies",
+    subHeader: "Media and Trailers Search",
+    tags: "Typescript ⚬ TheMovieDB API ⚬ TheTVDB API",
+    stackText: "Typescript, CSS, React, TheMovieDB API, The TVDB API",
+    row: "fun",
+    github: "https://github.com/dmquinn/tvmovies.github.io",
+    link: "https://pensive-edison-c73f81.netlify.app/ ",
+  },
+  {
+    image: GQLBlog,
+    info: "Blog made using GraphCMS and NextJS, dynamic routing, category and author filters.",
+    video: "",
+    genres: "Web App",
+    header: "TV + Movies",
+    subHeader: "Media and Trailers Search",
+    tags: "GraphQL ⚬ TheMovieDB API ⚬ TheTVDB API",
+    stackText: "GraphQL, GraphCMS, Next.js",
+    github: "https://github.com/dmquinn/GraphQL-Blog",
+    link: "",
+  },
+  {
     image: PhotoEditor,
-    info: "The photo editor allows users to apply preset filters to either default or user-uploded images.  Users can also apply their own custom filters by adjusting brightness, contrast, saturation etc, and apply one of five overlay image effects. Built using React and Tailwind",
+    info: "The photo editor allows users to apply preset filters to either default or user-uploded images.  Users can also apply their own custom filters by adjusting brightness, contrast, saturation etc, and apply one of five overlay image effects. Built using React with Typescript and Tailwind",
     genres: "Web App",
     video:
       "https://res.cloudinary.com/drpdq0pui/video/upload/v1633429648/portfolio/photo_editor_nwsypf.mp4",
@@ -120,24 +147,17 @@ const cards = [
     github: "https://github.com/dmquinn/React-music-player",
   },
   {
-    image: TvMovies,
-    info: "Using data and images from themoviedb API and thetvdb API, users can view top new releases in the header carousel, toggle between movie mode and tv mode, watch trailers using dynamic embedded iframe (and search from the youtube api).  Features an incremental search function, 'flashlight' cursor, and all built using Vanilla JS",
+    image: Sequencer,
+    info: "This was an exploration of HTML5 canvas and the WebAudio API, using vanilla JavaScript.  Features kick, hi-hat and perc sound made using frequency manipulations, as well as sawtooth notes in scale.",
     video:
-      "https://res.cloudinary.com/drpdq0pui/video/upload/v1633431328/portfolio/movie_vyaxhz.mp4",
+      "https://res.cloudinary.com/drpdq0pui/video/upload/v1638201114/portfolio/screen-capture_ba4ihm.mp4",
     genres: "Web App",
-    header: "TV + Movies",
-    subHeader: "Media and Trailers Search",
-    tags: "Vanilla JS ⚬ TheMovieDB API ⚬ TheTVDB API",
-    stackText: "Vanilla JS, CSS, TheMovieDB API, The TVDB API",
+    header: "Bleep Box",
+    subHeader: "Step sequencer",
+    tags: "Music ⚬ WebAudio API ⚬ Vanilla JS",
+    stackText: "VanillaJS, CSS",
     row: "fun",
-    github: "https://github.com/dmquinn/tvmovies.github.io",
-    link: "https://dmquinn.github.io/tvmovies.github.io/ ",
-  },
-  {
-    image: Test,
-    header: "header three",
-    subHeader: "subheader three",
-    tags: "MERN ⚬ Paypal ⚬ Full Stack",
+    github: "https://github.com/dmquinn/sequencer",
   },
 ];
 export default cards;

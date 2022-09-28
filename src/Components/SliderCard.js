@@ -21,6 +21,7 @@ const SliderCard = ({ card, setIsOpen, setModalData, modalData }) => {
           src={card.image}
           alt="Describe"
           className="rounded-t-sm object-cover"
+          loading="lazy"
         />
         <div
           style={{

@@ -34,10 +34,10 @@ span {
 }
 
 @keyframes growText {
-  from {
+  0% {
     font-size: 20px;
   }
 
-  to {
+  100% {
     font-size: 80px;  }
 }
